@@ -1,0 +1,39 @@
+{
+  "name": "ariane-router",
+  "version": "0.0.0",
+  "repository": "https://github.com/achtaitaipai/ariane-router",
+  "description": "A library that allows you to navigate through your website as if it were a single-page application (SPA) while it's actually a multi-page application (MPA)",
+  "type": "module",
+  "main": "./dist/ariane-router.umd.cjs",
+  "module": "./dist/ariane-router.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/ariane-router.js",
+      "require": "./dist/ariane-router.umd.cjs"
+    }
+  },
+  "scripts": {
+    "test": "vitest --ui",
+    "coverage": "vitest run --coverage",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "author": "Achtaitaipai",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/web-animations-js": "^2.2.12",
+    "@vitest/coverage-c8": "^0.26.3",
+    "@vitest/ui": "^0.27.0",
+    "jsdom": "^21.0.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.0.0",
+    "vite-plugin-dts": "^1.7.1",
+    "vitest": "^0.26.3",
+    "vitest-fetch-mock": "^0.2.1"
+  },
+  "dependencies": {
+    "morphdom": "^2.6.1"
+  }
+}
