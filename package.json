@@ -4,13 +4,13 @@
   "repository": "https://github.com/achtaitaipai/ariane-router",
   "description": "A library that allows you to navigate through your website as if it were a single-page application (SPA) while it's actually a multi-page application (MPA)",
   "type": "module",
-  "main": "./dist/ariane-router.umd.cjs",
-  "module": "./dist/ariane-router.js",
-  "types": "./dist/index.d.ts",
+  "main": "dist/ariane-router.umd.cjs",
+  "module": "dist/ariane-router.js",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/ariane-router.js",
-      "require": "./dist/ariane-router.umd.cjs"
+      "import": "dist/ariane-router.js",
+      "require": "dist/ariane-router.umd.cjs"
     }
   },
   "scripts": {
